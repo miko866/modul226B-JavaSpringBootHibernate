@@ -1,0 +1,52 @@
+/*
+* Sweet Alert
+*/
+
+//! Prevent scroll on top
+//! must be !important
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown),
+html.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  height: 100% !important;
+  overflow-y: visible !important;
+}
+
+.swal2-container .swal2-popup {
+  border-radius: 0;
+}
+.swal2-container .swal2-styled.swal2-confirm {
+  border-radius: 0;
+}
+.swal2-container .swal2-styled.swal2-cancel {
+  border-radius: 0;
+}
+
+// remove Outline
+.swal2-modal .swal2-styled:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+// Screamer icon Warning
+.swal2-container .swal2-icon.swal2-warning {
+  color: red;
+  border-color: red;
+}
+
+.swal2-container .swal2-title {
+  font-size: 1.4em;
+  color: black;
+}
+
+.swal2-container .swal2-content {
+  color: black;
+}
+
+.swal2-popup .swal2-actions .swal2-cancel {
+  color: black;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .swal2-container .swal2-title {
+    font-size: 1.1em;
+  }
+}
